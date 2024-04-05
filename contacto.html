@@ -4,20 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACTO</title>
+    <!--El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.-->
 </head>
 <body>
     <header></header>
     <main>
         <form action="" method="post">
+            <label for="motive">Motivo:</label>
+            <select name="Seleccione un motivo" id="motive">
+                <option value="value1">CONSULTA</option>
+                <option value="value2">RECLAMO</option>
+                <option value="value3">FELICITACIÓN</option>
+            </select><br>
             <label for="name">Nombre</label><br>
             <input type="text" name="" id="name"><br>
             <label for="surname">Apellido</label><br>
             <input type="text" name="" id="surname"><br>
+            <label for="tel">Teléfono</label><br>
+            <input type="tel" name="" id="tel"><br>
             <label for="email">Correo Electrónico</label><br>
             <input type="email" name="" id="email"><br>
-            <label for="comentary">Comentario</label><br>
-            <textarea name="" id="comentary" cols="30" rows="10"></textarea><br>
-            <input type="submit" value="Enviar Comentario">
+            <label for="message">Ingrese su mensaje o consulta aquí</label><br>
+            <textarea name="" id="message" cols="30" rows="10"></textarea><br>
+            <input type="checkbox" name="" id="privacity"><label for="privacity">Acepto la politica de privacidad</label><br>
+            <input type="submit" value="ENVIAR">
         </form>
     </main>
     <footer></footer>
