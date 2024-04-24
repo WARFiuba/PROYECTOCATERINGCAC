@@ -1,35 +1,72 @@
 <!DOCTYPE html>
 <html lang="ES">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACTO</title>
+    <title>Contacto - Confiteria Codo a Codo</title>
+    <link rel="stylesheet" href="./css/style.css">
     <!--El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.-->
 </head>
+
 <body>
-    <header></header>
+    <header class="header">
+        <div class="menu container">
+            <a href="#" class="logo"></a>
+            <input type="checkbox" id="menu" />
+            <label for="menu">
+                <img src="img/menu.png" class="menu-icono" alt="">
+            </label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="#">Quienes somos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="header-content container">
+
+            <h1>Codo a Codo<br>Confiteria y Catering</h1>
+            <a href="#" class="btn-1"><b>Ver productos</b></a>
+        </div>
+
+    </header>
     <main>
         <form action="" method="post">
             <label for="motive">Motivo:</label>
-            <select name="Seleccione un motivo" id="motive">
+            <select name="Seleccione un motivo" id="motive" required>
                 <option value="value1">CONSULTA</option>
                 <option value="value2">RECLAMO</option>
                 <option value="value3">FELICITACIÓN</option>
             </select><br>
             <label for="name">Nombre</label><br>
-            <input type="text" name="" id="name"><br>
+            <input type="text" name="" id="name" required><br>
             <label for="surname">Apellido</label><br>
-            <input type="text" name="" id="surname"><br>
+            <input type="text" name="" id="surname" required><br>
             <label for="tel">Teléfono</label><br>
-            <input type="tel" name="" id="tel"><br>
+            <input type="tel" name="" id="tel" required><br>
             <label for="email">Correo Electrónico</label><br>
-            <input type="email" name="" id="email"><br>
+            <input type="email" name="" id="email" required><br>
             <label for="message">Ingrese su mensaje o consulta aquí</label><br>
             <textarea name="" id="message" cols="30" rows="10"></textarea><br>
-            <input type="checkbox" name="" id="privacity"><label for="privacity">Acepto la politica de privacidad</label><br>
+            <input type="checkbox" name="" id="privacity" required><label for="privacity">Acepto la politica de
+                privacidad</label><br>
             <input type="submit" value="ENVIAR">
         </form>
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="creditos">
+                <h3>Confiteria Codo a Codo todos los derechos reservados 2024 ©</h3>
+                <p>Creado por Agustin, William, Ariel y Melisa.</p>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
