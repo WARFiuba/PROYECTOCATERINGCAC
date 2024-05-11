@@ -20,15 +20,15 @@ body{
 
 .header{
     background-image: linear-gradient(
-        rgba(0,0,0,0.7),
-        rgba(0,0,0,0.7)),
-        url(../img/panaderia.jpg);
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: cover;
-        min-height: 70vh;
-        display: flex;
-        align-items: center;
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)),
+    url(../img/panaderia.jpg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
 }
 
 .menu{
@@ -58,10 +58,12 @@ body{
     color: #FFFDFC;
     display: block;
     font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .menu .navbar ul li a:hover{
     color: #CE967B;
+    transform: scale(1.2);
 }
 
 #menu{
@@ -280,23 +282,66 @@ p{
 .footer{
     padding: 100px 0;
     background-color: #000000;
-}
-
-.footer-content{
-    display: felx;
+    display: block;
+  }
+  
+  .footer-content{
+    display: flex;
     justify-content: space-between;
-}
-
-.creditos h3{
+    flex-direction: column;
+  }
+  
+  .contenedor-de-redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+  }
+  
+  .contenedor-de-redes a h3{
+    color: white;
+  }
+  
+  .creditos h3{
     font-size: 18px;
     color: #F9FAFC;
     margin-bottom: 5px;
-}
-
-.creditos p{
+  }
+  
+  .creditos p{
     color: #F9FAFC;
     margin-bottom: 5px;
-}
+  }
+  
+  .redes{
+    width: 50px;
+    color: white;
+    display: block
+  }
+  
+  #contenedor-redes{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .enlace{
+    display: flex;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .redes a img{
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    margin: 2px;
+  }
+  
+  .creditos{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 
 @media(max-width:991px){
 
