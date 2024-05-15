@@ -55,3 +55,26 @@
 .producto:hover {
   transform: scale(1.2);
 }
+
+@media(max-width:768px) {
+  #header{
+    min-height: 0vh;
+  }
+
+  .producto {
+    flex: 0 0 calc(35% - 20px)
+  }
+
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+
+  #header {
+    min-height: 0vh;
+  }
+
+  .producto {
+    flex: 0 0 calc(35% - 20px);
+  }
+  
+}
