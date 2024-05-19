@@ -6,6 +6,7 @@
     <title>Contacto - Confiteria Codo a Codo</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/contacto.css" />
+    <script src="./js/contacto.js"></script>
     <!--El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios.-->
   </head>
 
@@ -47,7 +48,7 @@
           podemos ofrecerte una solución que se adapte a tus necesidades.
         </p>
       </div>
-      <form method="post">
+      <form class="form" method="post">
         <label for="motive">Motivo:</label>
         <select name="Seleccione un motivo" id="motive" required>
           <option value="" disabled selected>Selecciona una opción...</option>
@@ -71,7 +72,7 @@
           for="privacity"
           >Acepto la politica de privacidad</label
         ><br />
-        <input type="submit" value="ENVIAR" />
+        <input type="submit" value="ENVIAR" onclick="validate()"/>
       </form>
     </main>
     <footer class="footer">
