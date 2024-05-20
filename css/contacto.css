@@ -27,17 +27,11 @@ select {
   margin-bottom: 24px;
 }
 
-<<<<<<< HEAD
 textarea{
     resize: none;
     height: 200px;
-=======
-textarea {
-  resize: none;
-  height: 200px;
 }
 
-img {
-  width: 100%;
->>>>>>> 71f79b9fdefbc7d660ccdc0f5b3f8b876f76752c
+.error-message{
+  color: red;
 }
